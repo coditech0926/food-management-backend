@@ -1,4 +1,4 @@
-# Node.js Backend Demo
+# Food Management Backend
 
 ## Getting Started
 
