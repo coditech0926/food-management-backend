@@ -22,27 +22,7 @@ const Auth = {
     } catch (err: any) {
       throw new Error(err.message);
     }
-  },
-  find: async (props: any) => {
-    const { filter } = props;
-
-    try {
-      const result = await UserSchema.findOne({ $or: filter });
-      return result;
-    } catch (err: any) {
-      throw new Error(err.message);
-    }
-  },
-  findById: async (props: any) => {
-    const { param } = props;
-    try {
-      const result = await UserSchema.findById(param);
-
-      return result;
-    } catch (err: any) {
-      throw new Error(err.message);
-    }
-  }
+  }  
 };
 
 export default Auth;
